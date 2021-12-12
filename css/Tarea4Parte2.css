@@ -1,0 +1,186 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: rgba(245, 248, 248, 0.842);
+    color: black;
+    font-family: fantasy;
+}
+
+    .contenedor{
+        width: 90%;
+        max-width: 1000px;
+        margin: 20px auto;
+        display: grid;
+        grid-gap: 20px; /* pone margen interno*/
+        grid-template-columns: repeat(3,1fr); /*3 columnas */
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .contenedor > div, /*todos los div*/
+    .contenedor .contenido,
+    .contenedor .header,
+    .contenedor .sidebar,
+    .contenedor .footer
+    {
+        background-color: rgb(208, 209, 196);
+        padding: 20px;
+        border-radius: 4px;
+    }
+
+    .contenedor .header{
+        background-color: rgb(101, 101, 167);
+        color: rgb(228, 227, 227);
+        grid-column-start: 1; /* ver en el grid overlays del inspeccionar para entenderlo mejor*/
+        grid-column-end: -1;   /* empieza en columna 1 finaliza en la ultima columna disponible*/
+    }
+
+    .contenedor .contenido{
+        grid-column: span 2; /* the .contenido grid will span into 2 columns*/
+
+    }
+
+    .contenedor .sidebar{
+        grid-row: span 3;
+        grid-column: 3/4;
+        
+        background: rgb(179, 136, 136);
+        color: rgb(15, 15, 15);
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+
+    }
+
+    .contenedor .widget1,
+    .contenedor .widget2
+    {
+        background-color: rgb(36, 32, 102);
+        color: ghostwhite;
+        font-family: cursive;
+        height: 80px;
+        text-align: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;  /* ya que no toma el text align en flex box*/
+
+    }
+
+    .contenedor .footer{
+        background: #12203E;
+        color: white;
+        grid-column: 1/3;
+    }
+
+    @media screen and (max-width: 480px)
+    {
+        .contenedor .contenido{
+            
+            grid-column: 1/-1; /* empezara en la 1 y terminara en la ultima columna disponible*/
+                        
+        }
+        .contenedor .sidebar{
+            grid-column: 1/-1;
+        }
+
+        .contenedor .widget1
+        {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .contenedor .widget2
+        {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .contenedor .footer{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+    }
+
+    
+    @media screen and (min-width: 481px){
+        .contenedor .contenido{
+            
+            grid-column: 1/-1; 
+                        
+        }
+        .contenedor .sidebar{
+            grid-column: 1/-1;
+        }
+
+        .contenedor .widget1
+        {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .contenedor .widget2
+        {
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .contenedor .footer{
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+
+    }
+
+    @media screen and (min-width: 768px)
+    {
+        .contenedor .header H2{
+            display: flex;
+            justify-content: center;
+        }
+        .contenedor .contenido{
+            
+            grid-column: span 2; 
+                        
+        }
+        .contenedor .sidebar{
+            grid-column: 3;
+            grid-row: 2;
+        }
+            .contenedor .widget1
+        {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .contenedor .widget2
+        {
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .contenedor .footer{
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+    }
+
+    @media screen and (min-width: 1024px)
+    {
+        .contenedor .header H2{
+            display: flex;
+            justify-content: center;
+        }
+
+        .contenedor .contenido{
+                
+            grid-column: span 2; 
+                        
+        }
+        .contenedor .sidebar{
+            grid-column: 3/4;
+            grid-row: span 3;
+        }
+        .contenedor .footer{
+            grid-column: span 3;
+        }
+    } 
+   

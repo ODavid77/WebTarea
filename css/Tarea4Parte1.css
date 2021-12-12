@@ -1,0 +1,284 @@
+*{
+    margin: 1%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+
+h1{
+    text-align: center;
+    width: 100%;
+}
+
+body{
+    color: rgb(255, 255, 255);
+    background-color: rgb(68, 130, 105)
+}
+
+@media screen and (min-width: 300px)
+{
+    body{
+        
+        background-color: rgb(78, 120, 120);
+    }
+}
+
+@media screen and (min-width: 480px)
+{
+    body{
+        
+        background-color: rgb(88, 110, 135);
+    }
+}
+
+@media screen and (min-width: 630px)
+{
+    body{
+        
+        background-color: rgb(98, 100, 150);
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    body{
+        
+        background-color: rgb(108, 90, 165);
+    }
+}
+
+@media screen and (min-width: 1024px)
+{
+    body{
+        
+        background-color: rgb(118, 80, 180);
+    }
+}
+
+.nav{
+    text-align: justify;
+    font-style: normal;
+}
+
+#Section1{
+    background-color: rgb(120, 100, 150);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5ch;
+    margin-bottom: 5ch;     
+      
+}
+
+#contenedor1{
+    background-color: rgb(204, 218, 131);
+    justify-content: center;
+    margin: auto;
+}
+
+@media screen and (max-width: 480px)
+{
+    #contenedor1{
+        background-color: rgb(191, 221, 41);
+        
+        
+    }
+}
+
+#contenedor2{
+    background-color: rgb(68, 44, 204);
+    margin: auto;
+}
+
+@media screen and (max-width: 768px)
+{
+    #contenedor2{
+        background-color: rgb(100, 82, 204);
+    }
+}
+
+#contenedor3{
+    background-color: rgb(228, 147, 115);
+    margin: auto;
+}
+
+@media screen and (max-width: 1024px)
+{
+    #contenedor3{
+        background-color: rgb(219, 77, 21);
+    }
+}
+
+p{
+   color: black; 
+}
+
+#contenedor1 div{
+    
+    width: 120px;
+    height: 120px;
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 80px;
+    background-color: rgb(12, 170, 20);
+    margin: auto;
+    background: url(imagenes/BonitoFondo.jpg);
+        
+        background-size: cover;
+    
+}
+
+#contenedor2 div{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 40px;
+    background-color: rgb(12, 170, 20);
+    margin: auto;
+   
+    background: url(imagenes/BonitoFondo.jpg);
+        
+        background-size: cover;
+    
+}
+
+#contenedor3 div{
+    width: 60px;
+    height: 60px;
+    text-align: right;
+    border: 1px solid black;
+    border-radius: 1px;
+    background-color: rgb(12, 170, 20);
+    margin: auto;
+   
+    background: url(imagenes/BonitoFondo.jpg);
+        
+        background-size: cover;
+    
+}
+
+@media screen and (min-width: 480px)
+{
+    #contenedor1 div{
+    
+        width: 120px;
+        height: 120px;
+        
+        
+        border-radius: 50px;
+        background-color: rgb(12, 170, 20);
+        
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    #contenedor1 div{
+    
+        width: 80px;
+        height: 80px;
+       
+       
+        border-radius: 30px;
+        background-color: rgb(12, 170, 20);
+        
+    }
+}
+
+@media screen and (min-width: 1024px)
+{
+    #contenedor1 div{
+    
+        width: 60px;
+        height: 60px;
+        
+        
+        border-radius: 1px;
+        background-color: rgb(12, 170, 20);
+        
+    }
+}
+
+@media screen and (min-width: 480px)
+{
+    #contenedor2 div{
+    
+        width: 80px;
+        height: 80px;
+        
+      
+        border-radius: 40px;
+        background-color: rgb(12, 170, 20);
+        
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    #contenedor2 div{
+    
+        width: 80px;
+        height: 80px;
+        
+        
+        border-radius: 40px;
+        background-color: rgb(12, 170, 20);
+        
+    }
+}
+
+@media screen and (min-width: 1024px)
+{
+    #contenedor2 div{
+    
+        width: 80px;
+        height: 80px;
+        
+        
+        border-radius: 40px;
+        background-color: rgb(12, 170, 20);
+        
+    }
+}
+
+@media screen and (min-width: 480px)
+{
+    #contenedor3 div{
+    
+        width: 60px;
+        height: 60px;
+        
+        
+        border-radius: 10px;
+        background-color: rgb(12, 170, 20);
+        
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    #contenedor3 div{
+    
+        width: 80px;
+        height: 80px;
+       
+        
+        border-radius: 30px;
+        background-color: rgb(12, 170, 20);
+        
+    }
+}
+
+@media screen and (min-width: 1024px)
+{
+    #contenedor3 div{
+    
+        width: 120px;
+        height: 120px;
+        
+        border-radius: 80px;
+        background-color: rgb(12, 170, 20);
+        
+    }
+}
